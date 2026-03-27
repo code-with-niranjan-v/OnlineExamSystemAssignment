@@ -73,6 +73,15 @@ public class Question {
 	public void setCorrectAnswer(String correctAnswer) {
 		this.correctAnswer = correctAnswer;
 	}
+
+
+	
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		Question q = (Question) obj;
+		return q.questionId==this.questionId;
+	}
 	
 	
 }

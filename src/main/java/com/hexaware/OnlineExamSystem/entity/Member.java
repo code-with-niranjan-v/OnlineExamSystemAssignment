@@ -33,6 +33,11 @@ public class Member {
 	public String toString() {
 		return "Member [userId=" + userId + ", name=" + name + ", email=" + email + "]";
 	}
+	
+	public boolean equals(Object o) {
+		Member m = (Member)o;
+		return m.getUserId()==this.userId;
+	}
 
 	
 	
